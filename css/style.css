@@ -1,0 +1,250 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: Arial;
+	height: 100%;
+	overflow-y: hidden;
+	background-image: url(../images/background.png);
+	background-size: cover;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+main.container {
+	width: 980px;
+	margin: 0px auto;
+}
+/* BEGIN MENU */
+	nav {
+		background: #C1DBB3;
+		height: 60px;
+		line-height: 60px;
+		width: 100%;
+		color: #FAEDCA;
+		position: fixed;
+	}
+	nav ul {
+		list-style: none;
+		width: 470px;
+		margin: 0px auto;
+	}
+	nav ul li {
+		float: left;
+		font-weight: bold;
+		padding: 0px 20px;
+		text-transform: uppercase;
+	}
+	nav ul li:hover {
+		background-color: #7EBC89;
+	}
+/*EINDE MENU */
+/* BEGIN SECTIONS*/
+	body > section.main {
+		height: calc(100% - 61px);
+	}
+	section.main {
+		margin-top: 60px;
+		width: 100%;
+		display: block;
+		overflow-y: hidden;
+		position: absolute;
+	}
+	section.main::-webkit-scrollbar { 
+	    display: none; 
+	}
+	main.section {
+		display: block;
+		background-color: #F2C078;
+		height: 0%;
+		width: 0%;
+		position: relative;
+		overflow-y: scroll;
+		transition: width 2s, height 2s;
+		-webkit-transition: width 2s, height 2s;
+	}
+	main.display {
+		height: 100%;
+		width: 100%;
+	}
+	main.section::-webkit-scrollbar {
+		background-color: #C1DBB3;
+		padding: 5px;
+	}
+	main.section::-webkit-scrollbar-thumb {
+		background-color: #7EBC89;
+		border-radius: 10px;
+	}
+	main.section article {
+		padding: 50px 0px;
+	}
+	main.section article p {
+		margin: 2px 0px 6px 15px;
+		text-align: justify;
+	}
+	main.section article ul {
+		margin: 2px 0px 2px 30px;
+		text-align: justify;
+	}
+	main.section article .article-img {
+		width: 45%;
+		height: auto;
+		float: right;
+		margin: 0px 0px 20px 20px;
+	}
+/* EINDE SECTIONS*/
+/* BEGIN MAIN1 */
+	main#main1 header#header1 {
+		width: 100%;
+		height: 400px;
+		background-image: url(../images/illustraties/illustratie1.png);
+		background-size: cover;
+		background-color: #FAEDCA;
+	}
+	main#main1 header#header2 {
+		background-color: #7EBC89;
+		color: #F2C078;
+		height: 150px;
+		width: 100%;
+	}
+	main#main1 header#header2 h1 {
+		height: 100%;
+		font-size: 2em;
+		margin-bottom: 10px;
+		line-height: 150px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	main#main1 article#youtube {
+		height: 500px;
+		background-color: #FE5D26;
+	}
+	main#main1 article#youtube iframe {
+		width: 100%;
+		height: 500px;
+	}
+	main#main1 article {
+		color: #FAEDCA;
+	}
+	main#main1 article h1 {
+		text-align: left;
+		font-size: 1.4em;
+		margin: 5px 0px;
+
+	}
+	main#main1 article h2 {
+		font-size: 1.2em;
+		font-style: italic;
+		margin: 5px 0px;
+
+	}
+	main#main1 article p {
+		margin-left: 15px;
+		margin: 2px 0px 2px 15px;
+		text-align: justify;
+	}
+	main#main1 article ol li {
+		margin-left: 60px;
+	}
+/* EINDE MAIN1 
+BEGIN MAIN2 */
+	header#header1-main2 {
+		background-color: #F2C078;
+		height: 150px;
+		line-height: 150px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FE5D26;
+	}
+	main#main2 article {
+		background-color: #C1DBB3;
+		width: 100%;
+		color: #FAEDCA;
+	}
+	main#main2 article .article-img {
+		width: 60%;
+	}
+/* EINDE MAIN2 
+BEGIN MAIN3 */
+	header#header1-main3 {
+		background-color: #FE5D26;
+		height: 150px;
+		line-height: 150px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #C1DBB3;
+	}
+	header#header2-main3 {
+		background-image: url("../images/illustraties/illustratie1.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 400px;
+		width: 100%;
+	}
+	main#main3 article {
+		background-color: #7EBC89;
+		width: 100%;
+		color: #FAEDCA;
+	}
+	main#main3 table {
+		margin: 10px 0px;
+		border-spacing: 0em;
+	}
+	main#main3 table td, main#main3 table th {
+		border: 1px solid #FE5D26;
+		padding: 5px 10px;
+		border-spacing: 0em;
+	}
+	main#main3 table th {
+		font-style: italic;
+		text-transform: uppercase;
+		color: #F2C078;
+	}
+	main#main3 article#youtube {
+		height: 500px;
+		background-color: #FE5D26;
+	}
+	main#main3 article#youtube iframe {
+		width: 100%;
+		height: 500px;
+	}
+/* EINDE MAIN3
+BEGIN MAIN4 */
+	main#main4 article {
+		background-color: #FAEDCA;
+		color: #7EBC89;
+	}
+	main#main4 header#header1-main4 {
+		background-color: #F2C078;
+		height: 300px;
+		line-height: 300px;
+		color: #FE5D26;
+	}
+	main#main4 header#header2-main4 {
+		background-color: #C1DBB3;
+		background-image: url("../images/illustraties/illustratie3.png");
+		background-size: cover;
+		height: 400px;
+		width: 100%;
+
+	}
+	main#main4 header#header1-main4 h1 {
+		font-size: 2em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	main#main4 footer {
+		background-color: #7EBC89;
+		color: #F2C078;
+	}
+/* EINDE MAIN4
+/* BEGIN FOOTER*/ 
+footer {
+	background-color: #FAEDCA;
+	color: #FE5D26;
+	height: 45px;
+	line-height: 45px;
+}
